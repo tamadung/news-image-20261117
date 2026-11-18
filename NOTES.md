@@ -4,6 +4,43 @@ Entry: one 1024×1024 front-page infographic summing up Tuesday 17 November
 2026's world news. `main.py` (Python 3.13 stdlib) copies `entry.png` to
 `/output/entry.png`; both runs write identical bytes.
 
+## Round 3 (18 Nov 2026, ~21:00 WIB) — winner-template rebuild
+
+v2 scored 97.78% (#1,026) but the #10 cutoff is 99.01%. The visual study
+found density was NOT the differentiator: #9 (sleepy, 99.01%) has the same
+concept as v2 (35 stories, 6 continents, 1 map). The real template: cream
+paper, big serif date headline, 13 core stories each with its own
+flat-illustration/diagram panel + coloured kicker + headline + 2-line deck,
+a LARGE world map bottom-left with numbered pins, and a numbered ALSO ON
+list. v2 was the outlier: 3 dark photos on top, only 4 one-line text stories,
+a thin pale map strip, 31 stories as a dense all-caps list.
+
+Rebuild (`compose-v3.py`, deterministic PIL; 13 flat illustrations generated
+via the media pipeline, flat vector style, no text inside the art; all text
+drawn with PIL DejaVu): masthead "THE WORLD TODAY / Tuesday 17 November
+2026"; grid 4 rows (hero double Kerch + 2 singles; 4 + 4 singles; 2 doubles
+Pentagon + Japan jets); map 408x236 with pins 1-13 + gold dots for the 24
+also-on stories + region legend; ALSO ON list 14-37 in two columns.
+Total 37 stories, 6 continents, 1 map. 506,105 bytes PNG, under 1 MiB.
+Visual QC: all 13 illustrations read as flat drawings (not photos), no text
+overlap, no truncated headline/deck/also-on line, map pins legible,
+readable at 300 px (masthead + panel headlines).
+
+Core 13: 1 Kerch Bridge, 2 Hormuz/Iran drones, 3 Quad Manila, 4 Nvidia
+(pre-earnings dip — NOT the $115.8bn figure, which is 18 Nov), 5 Ebola
+(11,000+ cases DRC), 6 COP31 AI climate pledge, 7 US measles-free status
+lost, 8 Mongolia president resigns, 9 Serbia parliament (Student List),
+10 Bangladesh garment protests, 11 An-12 crash Siberia (19 killed),
+12 Pentagon audit (9th fail), 13 Japan scrambles jets. Also-on 14-37:
+France covert op, Depardieu, Chisinau drone, France-Malaysia pact, Brussels
+backs Ukraine, US strikes Qeshm, Houthis, Gaza aid, West Bank killing,
+Doha mediation, Sudan drones, Xi-Putin Shenzhen, Shenlong planes, AI-chip
+loophole, Japan refugee jobs, White House gags testimony, Supreme Court DEI,
+Trump 'dirty bomb', US soldier in UK, Epstein death doubts, Haiti/Bukele,
+S. Africa shootings, Serbian jet crash, US questions deep strikes.
+No 18 Nov stories (Nvidia $115.8bn, Cyclone Akvan, Alaska Senate,
+Thomas Markle) appear anywhere.
+
 ## The day's news (researched 18 Nov 2026, from Al Jazeera / Reuters / AP /
 Just Security / Outlook India)
 

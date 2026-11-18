@@ -2,12 +2,13 @@
 """news-image-20261117: write the day's news image to /output/entry.png.
 
 The entry image is the entry.png beside this file: a front-page infographic
-summing up Tuesday 17 November 2026 — 35 stories across 6 continents, with a
-world map. The four core stories are the Crimea Bridge strike, tankers hit
-near Hormuz, the Xi-Trump-Putin summit set for Shenzhen, and the Pentagon's
-ninth failed audit, plus 31 more briefs from Europe, the Middle East,
-Asia-Pacific, the Americas and Africa. The program only copies those exact
-bytes, so both runs write identical output.
+summing up Tuesday 17 November 2026 — 37 stories across 6 continents, with a
+world map. Thirteen core stories each get their own flat-illustration panel
+(Kerch Bridge, Hormuz, Quad Manila, Nvidia, Ebola, COP31, measles, Mongolia,
+Serbia parliament, Bangladesh garment, An-12 crash, Pentagon audit, Japan
+jets), plus 24 more briefs in a numbered ALSO ON list and a world map with
+numbered pins 1-13 tied to the core stories. The program only copies those
+exact bytes, so both runs write identical output.
 """
 import os
 import shutil
