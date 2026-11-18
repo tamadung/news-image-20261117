@@ -60,6 +60,38 @@ allegation, not a confirmed event, so it is not shown as fact.
 - `makefun check` (without bundle — transcripts_present fails as expected;
   the main session bundles it).
 
+## Resubmit v2 — denser (18 Nov 2026, built in a fresh session)
+
+- **Why:** v1 scored 96.87% (rank #2,762); #10 cutoff 98.97% (gap 2.10 pts).
+  The top 10 all follow one pattern: 30–48 stories + a world map. v1 had
+  only 4 story rows, no map. v2 copies that pattern: **35 stories, 6
+  continents, one front page and a map**.
+- **Layout:** header + hero triptych (kept from v1) + 4 core stories (now
+  numbered 1 / 10 / 17 / 25, matching the map pins) + a PIL-drawn world map
+  (continent outlines, 4 numbered red pins, gold dots for the other stories)
+  + a dense 31-brief grid grouped by continent, with colour-coded number
+  badges and a legend. All text drawn with PIL (DejaVu) — no AI text.
+- **Verification (build session, 18 Nov):** the three `[verify]` briefs were
+  re-checked by search. Sudan was reframed to the UN report (drones killed
+  1,600+ civilians in Sudan in 2026, reported 17 Nov) — the Amnesty report
+  itself is dated 18 Nov. Epstein was DROPPED: Freeman presented his
+  findings on 16 Nov (CBS reported 16 Nov), not a 17 Nov story; replaced by
+  the Rwanda deportation hub (five European states, verified 17 Nov from the
+  v1 research). South Africa shootings VERIFIED (17 killed, two shootings,
+  reported 17 Nov). The US-criticises-Ukraine-deep-strikes story VERIFIED
+  (Colby at NATO HQ, Brussels, Tuesday 17 Nov) and used as brief #35. The
+  Quad summit in Manila VERIFIED as Tuesday 17 Nov (Japan MFA). No 18 Nov
+  stories are used (no Nvidia $115.8bn figure, no Cyclone Akvan, no Alaska
+  Senate, no Thomas Markle).
+- **Legibility:** every brief fits its column in full (0 truncated lines;
+  brief font 12 px, all summaries shortened to fit). At 300 px the masthead,
+  date, hero and core headlines stay legible; the brief grid reads as dense
+  front-page texture, as in the winning entries.
+- **Validation:** `entry.png` 1024×1024, 549,660 bytes (< 1 MiB). compose-v2.py
+  run twice: byte-identical output (sha256 580bd6dd…). `main.py` run twice
+  locally: byte-identical. NOT submitted by this session — the main session
+  bundles + checks + submits.
+
 ## Weakest points
 
 1. The Pentagon story has no picture of its own (text row only) — the hero

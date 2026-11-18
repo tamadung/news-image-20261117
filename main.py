@@ -2,10 +2,12 @@
 """news-image-20261117: write the day's news image to /output/entry.png.
 
 The entry image is the entry.png beside this file: a front-page infographic
-summing up Tuesday 17 November 2026 — the Crimea Bridge strike, tankers hit
+summing up Tuesday 17 November 2026 — 35 stories across 6 continents, with a
+world map. The four core stories are the Crimea Bridge strike, tankers hit
 near Hormuz, the Xi-Trump-Putin summit set for Shenzhen, and the Pentagon's
-ninth failed audit, plus the day's other stories. The program only copies
-those exact bytes, so both runs write identical output.
+ninth failed audit, plus 31 more briefs from Europe, the Middle East,
+Asia-Pacific, the Americas and Africa. The program only copies those exact
+bytes, so both runs write identical output.
 """
 import os
 import shutil
